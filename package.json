@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": " nodemon server.js",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "NODE_ENV=production nodemon server.js",
+    "lint": "next lint",
+    "server": "nodemon server.js",
+    "prod": "NODE_ENV=production nodemon server.js"
   },
   "dependencies": {
     "@next/font": "^14.2.15",
